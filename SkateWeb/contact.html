@@ -1,0 +1,145 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Snow Bootstrap Website Template | Contact :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+ </head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+                                <li><a href="#">主页</a> </li>
+						    	<li><a href="shop.html">产品</a></li>
+						    	<li><a href="team.html">关于我们</a></li>
+								<li class="active"><a href="contact.html">联系我们</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="请输入搜索关键字..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!--search-scripts-->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>				    
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				  <div class="map">
+					<img src="myImg/map.png" height="350px" />
+				  </div>
+				</div>
+				<div class="col-md-5">
+					<p class="m_8">作为全球领先的信息与通信解决方案供应商，我们为电信运营商、企业和消费者等提供有竞争力的端到端ICT解决方案和服务，帮助客户在数字社会获得成功。我们坚持聚焦战略，对电信基础网络、云数据中心和智能终端等领域持续进行研发投入，以客户需求和前沿技术驱动的创新，使公司始终处于行业前沿，引领行业的发展。我们每年将销售收入的10%以上投入研发，在近15万华为人中，超过45%的员工从事创新、研究与开发。华为在170多个标准组织和开源组织中担任核心职位，已累计获得专利授权36,511件。</p>
+					<div class="address">
+				                <p>公司地址</p>
+						   		<p>公司地址</p>
+						   		<p>USA</p>
+				   		<p>电话:(00) 222 666 444</p>				   		
+				 	 	<p>邮箱: <span>support[at]snow.com</span></p>
+				   		<p> 联系我们--通过<span>微博</span>, <span>微信</span></p>				   		
+				   </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">欢迎您对本公司提宝贵意见</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 contact">
+				  <form method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" class="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					 	
+					</div>
+					<div class="text">
+	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">信息:</textarea>
+	                   <div class="form-submit">
+			           <input name="submit" type="submit" id="submit" value="提交"><br>
+			           </div>
+	                </div>
+	                <div class="clear"></div>
+                   </form>
+			     </div>
+		    </div>
+	     </div>
+	   </div>
+	  </div>
+	  		<div class="footer">
+	  			<div class="container">				
+	  				<div class="row footer_bottom">
+	  				    <div class="copy">
+	  			           <p>© copyright</p>
+	  		            </div>				  
+	     				</div>
+	  			</div>
+	  		</div>
+</body>	
+</html>

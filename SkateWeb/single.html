@@ -1,0 +1,270 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Snow Bootstrap Website Template | Single :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>				
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="myImg/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="myImg/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="current"><a href="shop.html">主页</a></li>						    	
+						    	<li><a href="shop.html">产品</a></li>	
+						    	<li><a href="team.html">关于我们</a></li>					    							    	
+								<li><a href="contact.html">联系我们</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+				    <div class="search-box">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="请输入您要查询的商品" type="search" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"> </span>
+							</form>
+						</div>
+					</div>
+	      		</div>
+	      		<script src="js/classie.js"></script>
+				<script src="js/uisearch.js"></script>
+				<script>
+					new UISearch( document.getElementById( 'sb-search' ) );
+				</script>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="myImg/3.jpg" />
+									<img class="etalage_source_image" src="myImg/3.jpg" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="myImg/4.jpg" />
+								<img class="etalage_source_image" src="myImg/4.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="myImg/5.jpg" />
+								<img class="etalage_source_image" src="myImg/5.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="myImg/6.jpg" />
+								<img class="etalage_source_image" src="myImg/6.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="myImg/7.jpg" />
+								<img class="etalage_source_image" src="myImg/7.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="myImg/8.jpg" />
+								<img class="etalage_source_image" src="myImg/8.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="myImg/9.jpg" />
+								<img class="etalage_source_image" src="myImg/9.jpg" />
+							</li>
+						</ul>
+					    </div>
+				        <!-- end product_slider -->
+				        <div class="single_right">
+				        	<h3>FREEBORD /SNOWBOARD/陆地单板滑雪/滑板/长板</h3>
+				        	<h4 style="background:rgba(255,150,150,0.3); padding:10px 10px 10px; margin-bottom
+				        	20px;"><p>价格：<strong style="color:rgb(255,69,0); font-size:20px;">￥1000</strong></p></h4>
+				        	<ul class="options">
+								<h4 class="m_12">选择尺寸</h4>
+								<li><a href="#">151</a></li>
+								<li><a href="#">148</a></li>
+								<li><a href="#">156</a></li>
+								<li><a href="#">145</a></li>
+								<li><a href="#">162(w)</a></li>
+								<li><a href="#">163</a></li>
+							</ul>
+				        	<div class="product-colors">
+								<p>配送&nbsp;&nbsp;上海&nbsp;至&nbsp;<a href="#">福建福州台江区</a> &nbsp;快递：￥10</p>						
+							</div>
+                            <div style="margin-bottom:20px;">
+                            	<p>数量：10件(库存30件)</p>
+                            </div>
+							<div class="btn_form">
+							   <form>
+								 <input type="submit" value="立即购买" title="">
+								 <input type="submit" value="加入购物车" title="">
+							  </form>
+							</div>
+							<ul class="add-to-links">
+    			              <li><img src="myImg/wish.png" alt=""><a href="#">标注为喜爱</a></li>
+    			            </ul>
+							
+				        </div>
+				        <div class="clear"> </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="box-info-product" style="border:1px solid #ddf;">
+					<!-- <p class="price2">超级卖家</p> -->
+							<p><img src="myImg/super.png"/></p>
+							<div class="age-content">
+								<i class="dian">店</i>
+								<span class="shop-age-val">5&nbsp;年老店</span>
+							</div>
+					       <ul>
+					       		<li>信誉：&nbsp;&nbsp;<img src="myImg/zuan-16-16.gif"/></li>
+					       		<li>掌柜：毒品库</li>
+					       		<li>联系：<a href="#">和我联系</a></li>
+					       		<li>资质：&nbsp;<img src="myImg/zizhi.png"/></li>
+					       </ul>
+							<button type="submit" name="Submit" class="exclusive">
+							   <span>进入店铺</span>
+							</button>
+
+				   </div>
+			   </div>
+			</div>		
+			<div class="desc">
+			   	<h4>宝贝详情</h4>
+			   	<p>FFREEBORD起源于美国，由几个热爱滑雪和滑板运动的年轻人创立，发展至今已经风靡全球每一个角落，美国人在极限运动领域再一次让世界震惊，他们发明了FREEBORD，像单板一样在旱地上滑行，你可以换刃，可以像单板一样在旱地上刹车，他还有特殊的固定器，让你在公路上一样可以轻易做出内转和外转，FREEBORD的自由感突破了滑板和长板在旱地上的局限性，如果你在炎炎夏日不想在室内滑雪场与BOX肉搏，那么你可以拥有一片FREEBORD，在青山绿水间体验一下不一样的“冬天”。FREEBORD经过对中轮调整，就有长板感觉一样巡航能力，有非常强的地形适应能力，娱乐性非常高。FREEBORD在美国手工生产每一个部件，保证了它的稳定性能。欢迎热爱单板、滑板和长板的朋友们加入FREEBORD的阵营中来，一起来推动这次极限运动变革的热潮。</p>
+			</div>
+			<div class="row">
+				<h4 class="m_11">看了又看</h4>
+				<div class="col-md-4 product1">
+					<img src="myImg/s1.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc">
+					<a href="single.html"></a>
+					<h3><a href="single.html"></a><a href="#">FREEBORD /SNOWBOARD</a></h3>
+						<p>陆地单板滑雪 </p>
+						<span class="reducedfrom">￥2266.00</span>
+						<span class="actual">￥2000.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">加入购物车</a></li>
+							<li class="shop_btn"><a href="#">了解更多</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4 product1">
+					<img src="myImg/s1.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc">
+					<a href="single.html"></a>
+					<h3><a href="single.html"></a><a href="#">FREEBORD /SNOWBOARD</a></h3>
+						<p>陆地单板滑雪 </p>
+						<span class="reducedfrom">￥2266.00</span>
+						<span class="actual">￥2000.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">加入购物车</a></li>
+							<li class="shop_btn"><a href="#">了解更多</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4 product1">
+					<img src="myImg/s1.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc">
+					<a href="single.html"></a>
+					<h3><a href="single.html"></a><a href="#">FREEBORD /SNOWBOARD</a></h3>
+						<p>陆地单板滑雪 </p>
+						<span class="reducedfrom">￥2266.00</span>
+						<span class="actual">￥2000.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">加入购物车</a></li>
+							<li class="shop_btn"><a href="#">了解更多</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+			</div>	
+	     </div>
+	   </div>
+	  </div>
+	 <div class="footer">
+			<div class="container">				
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© copyright</p>
+		            </div>				  
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>

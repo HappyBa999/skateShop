@@ -1,0 +1,189 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Snow Bootstrap Website Template | Team :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!-- Add fancyBox main JS and CSS files -->
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="myImg/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="myImg/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+                                <li><a href="index.html">主页</a> </li>
+						    	<li><a href="shop.html">产品</a></li>
+						    	<li class="active"><a href="team.html">关于我们</a></li>
+								<li><a href="contact.html">联系我们</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="请输入搜索关键字..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!--search-scripts-->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>				    
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row team_box">
+				<h3 class="m_2">我们的团队</h3>
+				<div class="col-md-3 team1">
+				  <a class="popup-with-zoom-anim" href="#small-dialog3"><img src="myImg/team1.jpg" class="img-responsive" title="continue" alt=""/></a>
+				    <div id="small-dialog3" class="mfp-hide">
+					   <div class="pop_up2">
+					   	 <h2>姓名 </h2>
+						 <p>简介</p>
+					   </div>
+					</div>
+					<h4 class="m_5"><a href="#">姓名</a></h4>
+				    <p class="m_6">经验</p>
+				</div>
+				<div class="col-md-3 team1">
+					<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="myImg/team2.jpg" class="img-responsive" title="continue" alt=""/></a>
+				    <div id="small-dialog3" class="mfp-hide">
+					   <div class="pop_up2">
+					   	 <h2>姓名</h2>
+						 <p>简介</p>
+					   </div>
+					</div>
+					<h4 class="m_5"><a href="#">姓名</a></h4>
+				    <p class="m_6">经验</p>
+				</div>
+				<div class="col-md-3 team1">
+					<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="myImg/team3.jpg" class="img-responsive" title="continue" alt=""/></a>
+				    <div id="small-dialog3" class="mfp-hide">
+					   <div class="pop_up2">
+					   	 <h2>姓名</h2>
+						 <p>简介</p>
+					   </div>
+					</div>
+					<h4 class="m_5"><a href="#">姓名</a></h4>
+				    <p class="m_6">经验</p>
+				</div>
+				<div class="col-md-3 team1">
+					<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="myImg/team4.jpg" class="img-responsive" title="continue" alt=""/></a>
+				    <div id="small-dialog3" class="mfp-hide">
+					   <div class="pop_up2">
+					   	 <h2>姓名</h2>
+						 <p>简介</p>
+					   </div>
+					</div>
+					<h4 class="m_5"><a href="#">姓名</a></h4>
+				    <p class="m_6">经验</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 team_bottom">
+				  <ul class="team_list">
+					<h4>动态</h4>
+		            <li><a href="#">新闻1新闻1</a><p>新闻111新闻1新闻1新闻1新闻1新闻1新闻1新闻1</p></li>
+		            <li><a href="#">新闻2新闻2</a><p>新闻222新闻222新闻222新闻222新闻222新闻222新闻222</p></li>
+		            <li><a href="#">新闻3新闻3</a><p>新闻333新闻333新闻333新闻333新闻333新闻333新闻333</p></li>
+		            <li><a href="#">新闻4新闻4</a><p>新闻444新闻444新闻444新闻444新闻444新闻444新闻444</p></li>
+		          </ul>
+				</div>
+				<div class="col-md-8">
+					<ul class="team_list">
+					 <h4>动态</h4>
+					 <p class="m_7">动态动态动态动态动态动态动态动态动态动态动态动态动态动态动态动态动态动态</p>
+		             <img src="myImg/team5.jpg" class="img-responsive" alt=""/>
+		          </ul>
+				</div>
+			</div>
+		</div>
+	   </div>
+	  </div>
+	  <div class="footer">
+	  			<div class="container">				
+	  				<div class="row footer_bottom">
+	  				    <div class="copy">
+	  			           <p>© copyright</p>
+	  		            </div>				  
+	     				</div>
+	  			</div>
+	  	</div>
+</body>	
+</html>
